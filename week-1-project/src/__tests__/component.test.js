@@ -13,7 +13,7 @@ import { render, fireEvent } from '@testing-library/react';
 test('The component App exist and can render', () => {
     // Take a look at where App is declared
     // See component.js
-
+   
     render(<App />);
 });
 

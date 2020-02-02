@@ -1,0 +1,554 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200202.150108.10257.0.001.json",
+    "dumpEventTime": "2020-02-02T15:01:08Z",
+    "dumpEventTimeStamp": "1580652068916",
+    "processId": 10257,
+    "cwd": "/home/hyfbe7/Desktop/HYF/React/week-1-project",
+    "commandLine": [
+      "/usr/bin/node",
+      "/home/hyfbe7/Desktop/HYF/React/week-1-project/node_modules/jest-worker/build/workers/processChild.js"
+    ],
+    "nodejsVersion": "v13.7.0",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "13.7.0",
+      "v8": "7.9.317.25-node.28",
+      "uv": "1.34.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.15.0-74-generic",
+    "osVersion": "#84-Ubuntu SMP Thu Dec 19 08:06:28 UTC 2019",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-3427U CPU @ 1.80GHz",
+        "speed": 2594,
+        "user": 6817400,
+        "nice": 28900,
+        "sys": 2563100,
+        "idle": 73838000,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3427U CPU @ 1.80GHz",
+        "speed": 2594,
+        "user": 5852700,
+        "nice": 22100,
+        "sys": 2820000,
+        "idle": 13430800,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3427U CPU @ 1.80GHz",
+        "speed": 2594,
+        "user": 6543700,
+        "nice": 23700,
+        "sys": 2680100,
+        "idle": 13216100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3427U CPU @ 1.80GHz",
+        "speed": 2594,
+        "user": 5928500,
+        "nice": 18000,
+        "sys": 2510500,
+        "idle": 13502800,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlo1",
+        "internal": false,
+        "mac": "80:00:0b:17:91:fc",
+        "address": "10.10.0.114",
+        "netmask": "255.255.254.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlo1",
+        "internal": false,
+        "mac": "80:00:0b:17:91:fc",
+        "address": "fe80::86b:cad:58d1:91f4",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 3
+      }
+    ],
+    "host": "HYFBE7"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000bd0365",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000a9f86c",
+      "symbol": "node::OnFatalError(char const*, char const*) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000c0758e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000c07909",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000db5e15",
+      "symbol": " [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000db64a6",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000dc4d19",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000dc5b55",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000dc862c",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d8f204",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x00000000010dc52e",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x000000000145cc79",
+      "symbol": " [/usr/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2003881984,
+    "totalCommittedMemory": 2001623144,
+    "usedMemory": 1996364488,
+    "availableMemory": 47224776,
+    "memoryLimit": 2047082496,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 2685816,
+        "capacity": 2094848,
+        "used": 749064,
+        "available": 1345784
+      },
+      "old_space": {
+        "memorySize": 1978540032,
+        "committedMemory": 1978277232,
+        "capacity": 1976158480,
+        "used": 1975574848,
+        "available": 583632
+      },
+      "code_space": {
+        "memorySize": 692224,
+        "committedMemory": 659360,
+        "capacity": 568800,
+        "used": 568800,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2363392,
+        "committedMemory": 2137520,
+        "capacity": 1678160,
+        "used": 1678160,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 17780736,
+        "committedMemory": 17780736,
+        "capacity": 17757792,
+        "used": 17757792,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2094848,
+        "used": 0,
+        "available": 2094848
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 124.116,
+    "kernelCpuSeconds": 12.3644,
+    "cpuConsumptionPercent": 110.96,
+    "maxRss": 2066968576,
+    "pageFaults": {
+      "IORequired": 204348,
+      "IONotRequired": 667638
+    },
+    "fsActivity": {
+      "reads": 1870928,
+      "writes": 24
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 56.4196,
+    "kernelCpuSeconds": 4.47711,
+    "cpuConsumptionPercent": 49.5095,
+    "fsActivity": {
+      "reads": 492552,
+      "writes": 24
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "GJS_DEBUG_TOPICS": "JS ERROR;JS LOG",
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_ham_it_up": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_sign_git_tag": "",
+    "USER": "hyfbe7",
+    "LC_TIME": "nl_NL.UTF-8",
+    "npm_config_user_agent": "npm/6.13.6 node/v13.7.0 linux x64",
+    "npm_config_always_auth": "",
+    "TEXTDOMAIN": "im-config",
+    "XDG_SEAT": "seat0",
+    "npm_config_bin_links": "true",
+    "npm_config_key": "",
+    "SSH_AGENT_PID": "3005",
+    "XDG_SESSION_TYPE": "x11",
+    "npm_config_allow_same_version": "",
+    "npm_config_description": "true",
+    "npm_config_fetch_retries": "2",
+    "npm_config_heading": "npm",
+    "npm_config_if_present": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_user": "",
+    "npm_node_execpath": "/usr/bin/node",
+    "SHLVL": "3",
+    "npm_config_prefer_online": "",
+    "npm_config_noproxy": "",
+    "OLDPWD": "/home/hyfbe7/Desktop/HYF/React",
+    "QT4_IM_MODULE": "xim",
+    "HOME": "/home/hyfbe7",
+    "npm_package_browserslist_production_0": ">0.2%",
+    "npm_config_force": "",
+    "DESKTOP_SESSION": "ubuntu",
+    "TERM_PROGRAM_VERSION": "1.39.2",
+    "npm_package_browserslist_production_1": "not dead",
+    "npm_config_only": "",
+    "npm_config_read_only": "",
+    "npm_package_browserslist_production_2": "not op_mini all",
+    "npm_config_cache_min": "10",
+    "npm_config_init_license": "ISC",
+    "GNOME_SHELL_SESSION_MODE": "ubuntu",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "GTK_MODULES": "gail:atk-bridge",
+    "npm_config_editor": "vi",
+    "npm_config_rollback": "true",
+    "npm_config_tag_version_prefix": "v",
+    "LC_MONETARY": "nl_NL.UTF-8",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_timing": "",
+    "npm_config_userconfig": "/home/hyfbe7/.npmrc",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "npm_config_engine_strict": "",
+    "npm_config_init_author_name": "",
+    "npm_config_init_author_url": "",
+    "npm_config_preid": "",
+    "npm_config_tmp": "/tmp",
+    "COLORTERM": "truecolor",
+    "npm_package_dependencies_react_scripts": "3.3.0",
+    "npm_package_description": "The exercises are guided by [tests](./src/__tests__). Each exercise has an associated test that will explain what is expected. Some tests you require you to fix an assertion others require you to fix something in the associated `.js` file.",
+    "npm_config_depth": "Infinity",
+    "npm_config_package_lock_only": "",
+    "npm_config_save_dev": "",
+    "npm_config_usage": "",
+    "npm_package_dependencies__testing_library_react": "^9.3.2",
+    "npm_package_homepage": "https://<username>.github.io/React/week-1-project/build/",
+    "npm_package_readmeFilename": "README.md",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_cafile": "",
+    "npm_config_otp": "",
+    "npm_config_package_lock": "true",
+    "npm_config_progress": "true",
+    "npm_config_https_proxy": "",
+    "npm_config_save_prod": "",
+    "MANDATORY_PATH": "/usr/share/gconf/ubuntu.mandatory.path",
+    "QT_QPA_PLATFORMTHEME": "appmenu-qt5",
+    "IM_CONFIG_PHASE": "2",
+    "npm_config_audit": "true",
+    "npm_config_cidr": "",
+    "npm_config_onload_script": "",
+    "npm_config_sso_type": "oauth",
+    "LOGNAME": "hyfbe7",
+    "GTK_IM_MODULE": "ibus",
+    "npm_config_rebuild_bundle": "true",
+    "npm_config_save_bundle": "",
+    "npm_config_shell": "/bin/bash",
+    "_": "/usr/bin/npm",
+    "npm_package_private": "true",
+    "npm_config_dry_run": "",
+    "npm_config_format_package_lock": "true",
+    "npm_config_prefix": "/usr",
+    "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
+    "npm_config_scope": "",
+    "npm_config_browser": "",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_save_optional": "",
+    "npm_config_searchopts": "",
+    "npm_config_versions": "",
+    "USERNAME": "hyfbe7",
+    "XDG_SESSION_ID": "2",
+    "TERM": "xterm-256color",
+    "npm_config_cache": "/home/hyfbe7/.npm",
+    "npm_config_proxy": "",
+    "npm_config_send_metrics": "",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "npm_package_scripts_start": "react-scripts start",
+    "npm_config_global_style": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_version": "",
+    "GTK2_MODULES": "overlay-scrollbar",
+    "WINDOWPATH": "2",
+    "npm_package_browserslist_development_0": "last 1 chrome version",
+    "npm_config_local_address": "",
+    "npm_config_viewer": "man",
+    "npm_config_node_gyp": "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "PATH": "/usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/hyfbe7/Desktop/HYF/React/week-1-project/node_modules/.bin:/home/hyfbe7/bin:/home/hyfbe7/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "SESSION_MANAGER": "local/HYFBE7:@/tmp/.ICE-unix/2900,unix/HYFBE7:/tmp/.ICE-unix/2900",
+    "npm_package_name": "react-w2",
+    "npm_package_browserslist_development_1": "last 1 firefox version",
+    "npm_config_audit_level": "low",
+    "npm_config_prefer_offline": "",
+    "NODE": "/usr/bin/node",
+    "XDG_MENU_PREFIX": "gnome-",
+    "GNOME_TERMINAL_SCREEN": "/org/gnome/Terminal/screen/9bff0003_e284_4872_919e_56a2a1d612f2",
+    "LC_ADDRESS": "nl_NL.UTF-8",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "npm_package_browserslist_development_2": "last 1 safari version",
+    "npm_config_color": "true",
+    "npm_config_sign_git_commit": "",
+    "DISPLAY": ":0",
+    "npm_package_scripts_eject": "react-scripts eject",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_maxsockets": "50",
+    "npm_config_offline": "",
+    "npm_config_sso_poll_frequency": "500",
+    "LANG": "en_US.UTF-8",
+    "XDG_CURRENT_DESKTOP": "ubuntu:GNOME",
+    "LC_TELEPHONE": "nl_NL.UTF-8",
+    "npm_package_dependencies_react_dom": "^16.12.0",
+    "npm_config_umask": "0022",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "TERM_PROGRAM": "vscode",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "XMODIFIERS": "@im=ibus",
+    "GNOME_TERMINAL_SERVICE": ":1.122",
+    "XAUTHORITY": "/run/user/1000/gdm/Xauthority",
+    "npm_config_fund": "true",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_config_loglevel": "notice",
+    "npm_config_logs_max": "10",
+    "npm_config_message": "%s",
+    "npm_lifecycle_script": "react-scripts test",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "npm_package_scripts_test": "react-scripts test",
+    "npm_config_ca": "",
+    "npm_config_cert": "",
+    "npm_config_global": "",
+    "npm_config_link": "",
+    "LC_NAME": "nl_NL.UTF-8",
+    "SHELL": "/bin/bash",
+    "npm_package_version": "0.1.0",
+    "npm_package_dependencies__testing_library_jest_dom": "^4.2.4",
+    "npm_config_access": "",
+    "npm_config_also": "",
+    "npm_config_save": "true",
+    "npm_config_unicode": "true",
+    "npm_lifecycle_event": "test",
+    "QT_ACCESSIBILITY": "1",
+    "GDMSESSION": "ubuntu",
+    "npm_package_dependencies__testing_library_user_event": "^7.1.2",
+    "npm_package_scripts_build": "react-scripts build",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"test\"],\"original\":[\"run\",\"test\"]}",
+    "npm_config_before": "",
+    "npm_config_long": "",
+    "npm_config_production": "",
+    "npm_config_searchlimit": "20",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_update_notifier": "true",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "npm_config_auth_type": "legacy",
+    "npm_config_node_version": "13.7.0",
+    "npm_config_tag": "latest",
+    "LC_MEASUREMENT": "nl_NL.UTF-8",
+    "npm_config_git_tag_version": "true",
+    "npm_config_commit_hooks": "true",
+    "npm_config_script_shell": "",
+    "npm_config_shrinkwrap": "true",
+    "TEXTDOMAINDIR": "/usr/share/locale/",
+    "GJS_DEBUG_OUTPUT": "stderr",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "LC_IDENTIFICATION": "nl_NL.UTF-8",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_save_exact": "",
+    "npm_config_strict_ssl": "true",
+    "XDG_VTNR": "2",
+    "QT_IM_MODULE": "ibus",
+    "npm_config_dev": "",
+    "npm_config_globalconfig": "/usr/etc/npmrc",
+    "npm_config_init_module": "/home/hyfbe7/.npm-init.js",
+    "npm_config_parseable": "",
+    "PWD": "/home/hyfbe7/Desktop/HYF/React/week-1-project",
+    "npm_config_globalignorefile": "/usr/etc/npmignore",
+    "npm_execpath": "/usr/lib/node_modules/npm/bin/npm-cli.js",
+    "CLUTTER_IM_MODULE": "xim",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/var/lib/snapd/desktop",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/etc/xdg",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_searchstaleness": "900",
+    "LC_NUMERIC": "nl_NL.UTF-8",
+    "npm_config_node_options": "",
+    "npm_config_save_prefix": "^",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "LC_PAPER": "nl_NL.UTF-8",
+    "npm_config_group": "1000",
+    "npm_config_init_author_email": "",
+    "npm_config_searchexclude": "",
+    "VTE_VERSION": "5202",
+    "npm_config_git": "git",
+    "npm_config_optional": "true",
+    "npm_package_dependencies_react": "^16.12.0",
+    "npm_package_eslintConfig_extends": "react-app",
+    "npm_config_json": "",
+    "INIT_CWD": "/home/hyfbe7/Desktop/HYF/React/week-1-project",
+    "BABEL_ENV": "test",
+    "NODE_ENV": "test",
+    "PUBLIC_URL": "",
+    "NODE_PATH": "",
+    "JEST_WORKER_ID": "1",
+    "FORCE_COLOR": "1"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 16777216,
+      "hard": 16777216
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 4096,
+      "hard": 4096
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 15045,
+      "hard": 15045
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
